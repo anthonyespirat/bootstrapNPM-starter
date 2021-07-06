@@ -16,3 +16,12 @@ SCRIPT
 ### TODO
  - Add JS purge or something like that
  - Do something with Bootstrap Icons !
+
+How to install
+---
+
+    git clone https://github.com/noxtv1/bootstrapNPM-starter.git
+    
+    cd bootstrapNPM-starter
+
+Special thank to [twbs](https://github.com/twbs/bootstrap-npm-starter)
