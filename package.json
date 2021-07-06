@@ -6,7 +6,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/noxtv1/bootstrapNPM-starter.git"
-},
+  },
   "scripts": {
     "build": "npm run css",
     "prefix": "postcss --replace assets/css/main.css --use autoprefixer --map",
