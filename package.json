@@ -1,0 +1,37 @@
+{
+  "name": "bootnpm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noxtv1/bootstrapNPM-starter.git"
+},
+  "scripts": {
+    "build": "npm run css",
+    "prefix": "postcss --replace assets/css/main.css --use autoprefixer --map",
+    "purge": "purgecss --css assets/css/main.css --content *.html --output assets/css/main.css",
+    "build-css": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 assets/scss -o assets/css/",
+    "css": "npm-run-all prefix build-css purge",
+    "watch": "nodemon -e html,scss -x \"npm run build-css\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.2",
+    "bootstrap-icons": "^1.5.0",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.9",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "purgecss": "^4.0.3",
+    "reset-css": "^5.0.1"
+  }
+}
