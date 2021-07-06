@@ -13,10 +13,6 @@ SCRIPT
 |purge| Run Purge CSS only
 |watch| Node SASS, watch for change *(with nodemon)* !
 
-### TODO
- - Add JS purge or something like that
- - Do something with Bootstrap Icons !
-
 How to install
 ---
 
@@ -25,3 +21,8 @@ How to install
     cd bootstrapNPM-starter
 
 Special thank to [twbs](https://github.com/twbs/bootstrap-npm-starter)
+
+### TODO
+ - Add JS purge or something like that
+ - Do something with Bootstrap Icons !
+
